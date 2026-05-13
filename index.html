@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية — تطبيق وصلني</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1d24;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #7c4dff;
+      --border: #2d323c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.65rem;
+      font-weight: 700;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    section p { margin: 0 0 0.65rem; }
+    section p:last-child { margin-bottom: 0; }
+    ul { margin: 0.35rem 0 0; padding-inline-start: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    a {
+      color: #8ab4f8;
+      word-break: break-all;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #2d323c;
+      color: var(--muted);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+  </style>
+  <!--
+    GitHub Pages: Settings → Pages → Source: Deploy from branch → Branch: main → Folder: /docs
+    الرابط يصبح: https://اسم-المستخدم.github.io/اسم-المستودع/
+    ثم ضع نفس الرابط في AppConfig.privacyPolicyUrl داخل تطبيق Flutter.
+  -->
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>سياسة الخصوصية</h1>
+      <p class="sub">تطبيق <strong>وصلني</strong> — تطبيق طلب رحلات للركاب</p>
+      <span class="badge">آخر تحديث للنص: <time datetime="2026-05-14">14 مايو 2026</time></span>
+    </header>
+
+    <p style="color: var(--muted); font-size: 0.92rem;">
+      <strong>الناشر القانوني:</strong><br />
+      شركة وصلني لخدمات النقل والتوصيل
+    </p>
+    <p style="color: var(--text); font-size: 0.95rem; margin-top: 0.75rem;">
+      الخدمة مخصّصة لـ <strong>جمهورية مصر العربية</strong> فقط، وضمن <strong>نطاق محافظة كفر الشيخ</strong> والمناطق المسموح بها داخل التطبيق على الخريطة. لا نقدّم الخدمة خارج هذه الحدود.
+    </p>
+
+    <h2 id="data">1) البيانات التي يجمعها التطبيق</h2>
+    <section aria-labelledby="data">
+      <p>تُعالج بياناتك في سياق تشغيل الخدمة داخل <strong>مصر</strong> و<strong>محافظة كفر الشيخ</strong> وفق النطاق الجغرافي المعتمد في التطبيق.</p>
+      <ul>
+        <li><strong>بيانات الحساب:</strong> الاسم، البريد الإلكتروني، رقم الهاتف، ومعرّف المستخدم عند التسجيل أو تسجيل الدخول.</li>
+        <li><strong>بيانات الرحلة:</strong> مواقع الانطلاق والوصول (إحداثيات أو عناوين نصية)، حالة الطلب، السعر، ومعلومات مرتبطة بالسائق عند قبول الرحلة (مثل الاسم أو رقم التواصل إن وُجدت في النظام).</li>
+        <li><strong>الموقع:</strong> موقع الجهاز أثناء استخدام الخريطة وطلب الرحلات ضمن نطاق الخدمة.</li>
+        <li><strong>التقييمات والملاحظات:</strong> إذا قيّمت رحلة أو أرسلت شكوى أو مقترحاً عبر التطبيق.</li>
+        <li><strong>بيانات تقنية:</strong> مثل نوع الجهاز ونظام التشغيل قد تمر عبر مزودي الخدمة (مثل Google) كجزء من التشغيل العادي للخدمات السحابية.</li>
+      </ul>
+    </section>
+
+    <h2 id="why">2) سبب استخدام البيانات</h2>
+    <section aria-labelledby="why">
+      <ul>
+        <li>إنشاء حسابك والتحقق منه وتسجيل الدخول.</li>
+        <li>عرض الخريطة، وتحديد أو اقتراح العناوين، وحساب المسار أو السعر عند الحاجة.</li>
+        <li>ربطك بالسائقين المتاحين ضمن <strong>نطاق الخدمة</strong> في مصر — محافظة كفر الشيخ والمناطق المسموح بها في التطبيق فقط.</li>
+        <li>تشغيل الرحلة (إنشاء الطلب، تحديث الحالة، إشعارات أو تنبيهات متعلقة بالرحلة).</li>
+        <li>تحسين الخدمة، والدعم، والامتثال للالتزامات القانونية عند الاقتضاء.</li>
+      </ul>
+    </section>
+
+    <h2 id="share">3) هل نشارك بياناتك؟</h2>
+    <section aria-labelledby="share">
+      <p><strong>لا نبيع بياناتك الشخصية.</strong> قد تُشارك أجزاء من البيانات مع <strong>مزودي خدمات</strong> نعتمد عليهم لتشغيل التطبيق، منهم على سبيل المثال:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> (مثل المصادقة، قاعدة البيانات اللحظية، التخزين عند الاستخدام) وفق سياسات Google.</li>
+        <li><strong>خدمات خرائط وأماكن</strong> مثل <strong>OpenStreetMap / Nominatim</strong> لبحث العناوين عند الحاجة.</li>
+        <li><strong>خادم مسارات</strong> مثل <strong>OSRM</strong> (مثال: router.project-osrm.org) لحساب المسار عند الرحلات الخارجية.</li>
+      </ul>
+      <p>هؤلاء المزودون يعالجون البيانات كـ«معالجين» وفق سياساتهم. ننصح بمراجعة روابط الخصوصية الخاصة بهم إن رغبت بالتفصيل.</p>
+    </section>
+
+    <h2 id="delete">4) طريقة حذف الحساب والبيانات المرتبطة</h2>
+    <section aria-labelledby="delete">
+      <p>يمكنك طلب حذف حسابك من داخل التطبيق:</p>
+      <ol style="margin: 0; padding-inline-start: 1.25rem;">
+        <li>افتح القائمة الجانبية (القائمة الرئيسية).</li>
+        <li>اختر <strong>«حذف حسابي»</strong>.</li>
+        <li>اقرأ التحذير، ثم أدخل <strong>كلمة مرورك</strong> للتأكيد.</li>
+      </ol>
+      <p style="margin-top: 0.75rem;">بعد التأكيد يُزال حسابك من نظام المصادقة ويُحذف جزء كبير من البيانات المخزّنة في قاعدة بيانات التطبيق المرتبطة بحسابك (مثل الملف الشخصي، وسجل الرحلات المرتبط بك، والتقييمات والشكاوى/المقترحات المرتبطة بحسب التصميم التقني وصلاحيات النظام).</p>
+      <p>إذا واجهت مشكلة في الحذف من التطبيق يمكنك التواصل معنا على البريد أدناه مع عنوان بريدك المسجّل.</p>
+    </section>
+
+    <h2 id="contact">5) التواصل</h2>
+    <section aria-labelledby="contact">
+      <p>للاستفسارات المتعلقة بالخصوصية أو البيانات أو حذف الحساب:</p>
+      <p><strong>البريد الإلكتروني:</strong> <a href="mailto:sher1fabd3n@gmail.com">sher1fabd3n@gmail.com</a></p>
+    </section>
+
+  </div>
+</body>
+</html>
