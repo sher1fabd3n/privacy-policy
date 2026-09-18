@@ -3,136 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>حذف الحساب — تطبيق دسوق وصلني</title>
+  <title>طلب حذف الحساب | دسوق وصلني</title>
+  <meta name="description" content="طريقة حذف حساب وبيانات مستخدم تطبيق دسوق وصلني من داخل التطبيق أو عبر البريد." />
   <style>
     :root {
-      --bg: #ffffff;
-      --card: #f5f5f5;
-      --text: #212121;
-      --muted: #616161;
-      --accent: #d32f2f;
-      --accent-dark: #b71c1c;
-      --border: #e0e0e0;
-      --link: #c62828;
+      --ink: #1a1a1a;
+      --paper: #f7f4ef;
+      --panel: #ffffff;
+      --line: #d9d1c7;
+      --brand: #b71c1c;
+      --soft: #fff4f0;
+      --quiet: #5a5a5a;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-      font-size: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+      line-height: 1.8;
     }
-    .wrap {
-      max-width: 42rem;
+    .page {
+      max-width: 46rem;
       margin: 0 auto;
-      padding: 1.5rem 1.25rem 3rem;
+      padding: 2rem 1.2rem 3.5rem;
     }
-    header {
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    h1 {
-      margin: 0 0 0.35rem;
-      font-size: 1.65rem;
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--brand);
+      font-size: 0.78rem;
       font-weight: 700;
-      color: var(--accent-dark);
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
     }
-    .sub { color: var(--muted); font-size: 0.95rem; }
+    h1 { font-size: 1.7rem; margin: 0 0 0.4rem; }
     h2 {
-      margin: 1.5rem 0 0.75rem;
-      font-size: 1.15rem;
-      color: var(--accent);
-      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.6rem 0 0.5rem;
+      padding-right: 0.65rem;
+      border-right: 4px solid var(--brand);
     }
-    section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.1rem;
-      margin-bottom: 1rem;
+    .meta { color: var(--quiet); font-size: 0.92rem; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
     }
-    section p { margin: 0 0 0.65rem; }
-    section p:last-child { margin-bottom: 0; }
-    ul, ol { margin: 0.35rem 0 0; padding-inline-start: 1.25rem; }
-    li { margin-bottom: 0.35rem; }
-    a { color: var(--link); word-break: break-all; }
-    a:hover { text-decoration: underline; }
-    .app-id {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 0.5rem;
+    .note {
+      background: var(--soft);
+      border-radius: 12px;
+      padding: 0.9rem 1.05rem;
+      margin: 1rem 0;
+    }
+    ol, ul { margin: 0.35rem 0 0; padding-inline-start: 1.25rem; }
+    li { margin-bottom: 0.4rem; }
+    a { color: var(--brand); }
+    code {
+      background: #efe8de;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.86rem;
     }
     .en {
       direction: ltr;
       text-align: left;
-      margin-top: 2rem;
+      margin-top: 2.25rem;
       padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.92rem;
-      color: var(--muted);
+      border-top: 1px dashed var(--line);
+      color: var(--quiet);
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>حذف الحساب والبيانات</h1>
-      <p class="sub">تطبيق <strong>دسوق وصلني</strong> (Desouk Wasalny) — تطبيق طلب رحلات للركاب</p>
-      <p class="app-id">معرّف التطبيق على Google Play: <code>com.sherif.desoukwasalny</code></p>
-    </header>
-
-    <p>
-      <strong>الناشر القانوني:</strong> دسوق وصلني لخدمات النقل والتوصيل<br />
-      <strong>المطوّر:</strong> Sherif Ahmed Abden
+  <div class="page">
+    <span class="badge">حذف الحساب</span>
+    <h1>حذف حسابك من دسوق وصلني</h1>
+    <p class="meta">
+      تطبيق الركاب <strong>دسوق وصلني</strong> (Desouk Wasalny).<br />
+      الناشر القانوني: دسوق وصلني لخدمات النقل والتوصيل —
+      المطوّر: Sherif Ahmed Abden<br />
+      معرّف التطبيق: <code>com.waslny.users</code><br />
+      تاريخ السريان: <strong>18 سبتمبر 2026</strong>
     </p>
 
     <p>
-      يسمح تطبيق <strong>دسوق وصلني</strong> بإنشاء حساب للمستخدمين. يمكنك حذف حسابك
-      والبيانات المرتبطة به بإحدى الطريقتين التاليتين.
+      إذا أنشأت حسابًا داخل التطبيق يمكنك إنهاؤه ومسح البيانات المرتبطة به.
+      المسار متاح من التطبيق نفسه، ومتاح أيضًا من هذه الصفحة عبر البريد إذا لم
+      يعد بإمكانك تسجيل الدخول.
     </p>
 
-    <h2>١) الحذف من داخل التطبيق</h2>
-    <section>
+    <div class="note">
+      الحذف نهائي بعد التأكيد. لن تتمكن من استخدام نفس الحساب بعد إتمام العملية.
+    </div>
+
+    <h2>الحذف من التطبيق</h2>
+    <div class="panel">
       <ol>
-        <li>افتح تطبيق <strong>دسوق وصلني</strong> وسجّل الدخول.</li>
-        <li>من الشاشة الرئيسية افتح <strong>القائمة الجانبية</strong> (☰).</li>
-        <li>اختر <strong>«حذف حسابي»</strong>.</li>
-        <li>اقرأ التحذير، ثم أدخل <strong>كلمة مرورك</strong> واضغط <strong>«حذف نهائي»</strong>.</li>
+        <li>شغّل تطبيق دسوق وصلني وادخل بحسابك.</li>
+        <li>من الشاشة الرئيسية افتح القائمة الجانبية.</li>
+        <li>اضغط «حذف حسابي».</li>
+        <li>راجع التنبيه، ثم اكتب كلمة المرور واختر «حذف نهائي».</li>
       </ol>
-    </section>
+    </div>
 
-    <h2>٢) ما الذي يُحذف؟</h2>
-    <section>
+    <h2>البيانات التي تُزال</h2>
+    <div class="panel">
+      <p>عند اكتمال الطلب نعمل على حذف ما يرتبط بحسابك، ويشمل عادةً:</p>
       <ul>
-        <li>حساب المصادقة (Firebase Authentication).</li>
-        <li>الملف الشخصي في قاعدة بيانات التطبيق.</li>
-        <li>سجل الرحلات وطلبات الاشتراك والتقييمات والملاحظات المرتبطة بحسابك.</li>
-        <li>ملفات التخزين المرتبطة بحسابك إن وُجدت.</li>
+        <li>حساب تسجيل الدخول لدى خدمة المصادقة.</li>
+        <li>بيانات الملف الشخصي المخزّنة في قاعدة بيانات التطبيق.</li>
+        <li>سجل الرحلات وطلبات الاشتراك والتقييمات والملاحظات المرتبطة بك.</li>
+        <li>ملفات التخزين التابعة لحسابك إن وُجدت.</li>
       </ul>
-    </section>
+      <p>
+        قد تُستثنى سجلات محدودة إذا كان الاحتفاظ بها لازمًا نظامًا أو لأغراض أمنية.
+      </p>
+    </div>
 
-    <h2>٣) طلب الحذف عبر البريد</h2>
-    <section>
+    <h2>طلب الحذف بالبريد (بدون فتح التطبيق)</h2>
+    <div class="panel">
       <p>
-        إذا تعذّر الحذف من التطبيق، أرسل بريداً إلى
-        <a href="mailto:sher1fabd3n@gmail.com">sher1fabd3n@gmail.com</a>
-        من عنوان البريد المسجّل في حسابك، مع عنوان الرسالة:
-        <strong>طلب حذف حساب — دسوق وصلني</strong>.
-        سنرد خلال ٧ أيام عمل ونحذف بياناتك المرتبطة بالحساب.
+        راسل
+        <a href="mailto:sher1fabd3n@gmail.com?subject=طلب%20حذف%20حساب%20دسوق%20وصلني">sher1fabd3n@gmail.com</a>
+        من البريد المسجّل في حسابك. ضع في عنوان الرسالة:
+        <strong>طلب حذف حساب — دسوق وصلني</strong>، واذكر رقم الهاتف المرتبط إن أمكن.
+        نراجع الطلب ونكمل الحذف خلال سبعة أيام عمل، ونرد عليك بالنتيجة.
       </p>
       <p>
-        <a href="index.html">سياسة الخصوصية الكاملة</a>
+        <a href="index.html">الرجوع إلى سياسة الخصوصية</a>
       </p>
-    </section>
+    </div>
 
     <div class="en">
-      <p><strong>Account deletion — Desouk Wasalny</strong></p>
-      <p>Publisher: Desouk Wasalny for transport services · Developer: Sherif Ahmed Abden</p>
-      <p>In-app: Main menu → Delete my account → confirm with password.</p>
-      <p>Email: <a href="mailto:sher1fabd3n@gmail.com">sher1fabd3n@gmail.com</a></p>
+      <p><strong>Account deletion — Desouk Wasalny rider app</strong></p>
+      <p>Package ID: <code>com.waslny.users</code>. Publisher: Desouk Wasalny for transport and delivery services. Developer: Sherif Ahmed Abden. Effective: 18 September 2026.</p>
+      <p>In the app: open the side menu → Delete my account → confirm with your password.</p>
+      <p>Without the app: email <a href="mailto:sher1fabd3n@gmail.com">sher1fabd3n@gmail.com</a> from your registered address. We complete deletion within 7 business days. Some records may be retained only if legally or security-required.</p>
     </div>
   </div>
 </body>
